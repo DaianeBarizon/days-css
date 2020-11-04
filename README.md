@@ -14,7 +14,6 @@
 
 * Realizar um projeto por dia
 * Compartilhe seu progresso nas mídias sociais (Twitter, Facebook, Linkedin etc.) usando a hashtag #30diasDeCSS
-* O projeto deve ser concluído até 23:59
 
 Gostou da ideia? 
 [Clique aqui](https://github.com/MilenaCarecho/30diasDeCSS/issues/1) para dicas no Repositório da MilenaCarecho
