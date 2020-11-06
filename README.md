@@ -2,7 +2,7 @@
 
  Fala Devs, beleza? 🖖
 
- 30 days-css, é um desafio que visa ajudá-lo a melhorar suas habilidades de codificação fazendo mini projetos diarios utilizando HTML5 e CSS3 
+ 30 days-css, é um desafio que visa ajudá-lo a melhorar suas habilidades de codificação fazendo mini projetos diarios utilizando HTML5 e CSS3.
 
  ## Objetivo
 
