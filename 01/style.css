@@ -6,6 +6,7 @@
   --instagram-bg-color: #d32f86;
   --white-bg-color: #ffffff;
   --ice-bg-color: #f9f9f9;
+  --black-opacity-color: #464646;
 }
 
 html {
@@ -19,10 +20,11 @@ html {
 
 .title {
   text-align: center;
-  font-family: "Syne Mono", monospace;
-  letter-spacing: 0.4rem;
+  font-family: "Lobster", cursive;
   z-index: 1;
   position: relative;
+  font-size: 50px;
+  color: var(--black-opacity-color);
 }
 
 .container {
@@ -35,55 +37,26 @@ html {
 
 .facebook {
   background-color: var(--facebook-bg-color);
-  transition: transform 0.3s ease;
 }
-.fa-facebook-f:before,
-.fa-facebook:before {
-  margin-left: 10px;
-}
+
 .twitter {
   background-color: var(--twitter-bg-color);
-  transition: transform 0.5s ease-in;
 }
+
 .google-plus {
   background-color: var(--google-plus-bg-color);
-  transition: transform 0.5s ease-out;
 }
+
 .linkedin {
   background-color: var(--linkedin-bg-color);
-  transition: transform 0.5s ease-in-out;
 }
+
 .instagram {
   background-color: var(--instagram-bg-color);
-  transition: transform 0.5s linear;
-}
-
-.container:hover .social-media {
-  transform: translateX(300px);
-}
-
-.social-media {
-  transform: rotate(-31deg) skew(25deg);
-}
-
-.wrapper-icon {
-  margin: 4rem;
-  padding: 2.5rem;
-  width: 60px;
-  height: 60px;
 }
 
 .icon {
   color: var(--white-bg-color);
-}
-
-.container-facebook {
-  background-color: aqua;
-  padding: 20px;
-}
-
-.icone-facebook {
-  font-size: 40px;
 }
 
 .container-bg {
@@ -93,4 +66,49 @@ html {
   border-bottom: 60rem solid transparent;
   background: rgb(255, 255, 255);
   border-left: 100rem solid var(--ice-bg-color);
+}
+
+.wrapper {
+  position: relative;
+  transform: rotate(-30deg) skew(25deg);
+  transition: margin-bottom 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 150px;
+}
+
+.wrapper-icon {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper:hover .wrapper-icon:nth-child(5) {
+  transform: translate(80px, -80px);
+  opacity: 1;
+}
+
+.wrapper:hover .wrapper-icon:nth-child(4) {
+  transform: translate(60px, -60px);
+  opacity: 0.8;
+}
+
+.wrapper:hover .wrapper-icon:nth-child(3) {
+  transform: translate(40px, -40px);
+  opacity: 0.6;
+}
+
+.wrapper:hover .wrapper-icon:nth-child(2) {
+  transform: translate(20px, -20px);
+  opacity: 0.4;
+}
+
+.wrapper:hover .wrapper-icon:nth-child(1) {
+  transform: translate(0px, 0px);
+  opacity: 0.2;
 }
